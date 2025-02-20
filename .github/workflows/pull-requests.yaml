@@ -43,3 +43,11 @@ jobs:
         with:
           recreate: true
           path: code-coverage-results.md
+      - if: always()
+        name: Notify to slack
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job_status }}}
+          fields: repo,message,commit,author,action,eventName,workflow
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
