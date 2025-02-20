@@ -1,7 +1,7 @@
 {
     "name": "izzius/package",
     "description": "A package sample",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "require-dev": {
         "phpunit/phpunit": "^12.0",
         "phpstan/phpstan": "^2.1",
@@ -23,5 +23,21 @@
             "name": "izzius94",
             "email": "izzius94@outlook.com"
         }
-    ]
+    ],
+    "archive": {
+        "exclude": [
+            ".github",
+            "docker",
+            "/tests",
+            ".editorconfig",
+            ".gitattributes",
+            ".gitignore",
+            ".php-cs-fixer.php",
+            "compose.yaml",
+            "Makefile",
+            "phpstan.neon",
+            "phpunit.xml",
+            "README.md"
+        ]
+    }
 }
