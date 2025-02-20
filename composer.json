@@ -23,5 +23,21 @@
             "name": "izzius94",
             "email": "izzius94@outlook.com"
         }
-    ]
+    ],
+    "archive": {
+        "exclude": [
+            ".github",
+            "docker",
+            "/tests",
+            ".editorconfig",
+            ".gitattributes",
+            ".gitignore",
+            ".php-cs-fixer.php",
+            "compose.yaml",
+            "Makefile",
+            "phpstan.neon",
+            "phpunit.xml",
+            "README.md"
+        ]
+    }
 }
