@@ -21,7 +21,10 @@ readonly class Decimal
      */
     public static function fromFloat(float $number): Decimal
     {
-        return new Decimal(0, 0);
+        $comma = strpos($number, '.');
+        $value = str_replace('.', '', $number);
+
+        return new Decimal($value, $comma);
     }
 
     /**
