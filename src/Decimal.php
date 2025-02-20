@@ -4,7 +4,6 @@ namespace Izzius\Package;
 
 readonly class Decimal
 {
-
     /**
      * @param int $value The value without comma
      * @param int $comma The position of the comma
