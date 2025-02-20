@@ -20,8 +20,9 @@ readonly class Decimal
      */
     public static function fromFloat(float $number): Decimal
     {
-        $comma = strpos($number, '.');
-        $value = str_replace('.', '', $number);
+        $converted = (string)$number;
+        $comma = strpos($converted, '.');
+        $value = (int)str_replace('.', '', $converted);
 
         return new Decimal($value, $comma);
     }
@@ -33,6 +34,6 @@ readonly class Decimal
      */
     public function original(): float
     {
-        return substr_replace($this->value, '.', $this->comma, 0);
+        return (float)substr_replace((string)$this->value, '.', $this->comma, 0);
     }
 }
