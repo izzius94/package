@@ -34,6 +34,6 @@ readonly class Decimal
      */
     public function original(): float
     {
-        return 0;
+        return substr_replace($this->value, '.', $this->comma, 0);
     }
 }
