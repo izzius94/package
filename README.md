@@ -3,6 +3,9 @@
 ## Description
 This is a skeleton for composer library distributed via GitHub.
 
+To publish a new version remember to update te `version` field in the `composer.json` file and
+create a matching tag (**v** as prefix is accepted).
+
 ## Installation
 
 To install the package add the repository to your `composer.json`
